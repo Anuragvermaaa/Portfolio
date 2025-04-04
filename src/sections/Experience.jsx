@@ -5,6 +5,11 @@ import { OrbitControls } from '@react-three/drei';
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'; 
+
+// const dracoLoader = new DRACOLoader();
+// dracoLoader.setDecoderPath('/draco/'); // Path to Draco decoder files in public/draco/
+// useGLTF.preload('/models/animations/developer.glb', dracoLoader);
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');

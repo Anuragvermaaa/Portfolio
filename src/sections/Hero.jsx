@@ -1,9 +1,9 @@
-
 import { Leva } from 'leva';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
-import { PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera, useGLTF } from '@react-three/drei';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'; // DracoLoader import
 
 import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
@@ -14,6 +14,11 @@ import CanvasLoader from '../components/Loading.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
+
+// Configure DracoLoader and preload GLB
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath('/draco/'); // Path to Draco decoder files in public/draco/
+useGLTF.preload('/models/hacker-room(2).glb', dracoLoader); // Preload with Draco support (adjust path if needed)
 
 const Hero = () => {
   // Use media queries to determine screen size

@@ -7,6 +7,14 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '../constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'; 
+
+// const dracoLoader = new DRACOLoader();
+// dracoLoader.setDecoderPath('/draco/'); // Path to Draco decoder files in public/draco/
+// useGLTF.preload('/models/computer(2).glb', dracoLoader);
+
+
+
 
 const projectCount = myProjects.length;
 

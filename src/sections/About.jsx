@@ -25,7 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Anurag Verma</p>
               <p className="grid-subtext">
-                With 1 year of experience, I have honed my skills in both frontend and backend dev, creating dynamic
+                I'm a B.Tech graduate with Computer Science specialization, I have honed my skills in both frontend and backend dev, creating dynamic
                 and responsive websites.
               </p>
             </div>
@@ -62,7 +62,7 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
+              <p className="grid-headtext">I’m very flexible with time zone & locations, currently looking for opportunities</p>
               <p className="grid-subtext">I&apos;m based in Noida, India and open to work.</p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
