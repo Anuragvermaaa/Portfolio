@@ -25,6 +25,7 @@
     "react-dom": "^19.0.0",
     "react-globe.gl": "^2.33.2",
     "react-responsive": "^10.0.1",
+    "react-router-dom": "^7.5.3",
     "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.175.0"
   },
